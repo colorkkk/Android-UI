@@ -49,20 +49,29 @@ public class MainActivity extends AppCompatActivity {
 }
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190409103806420.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMjQxNDEy,size_16,color_FFFFFF,t_70)
+
 ## 2.创建自定义布局的AlertDialog
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2019040910341619.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMjQxNDEy,size_16,color_FFFFFF,t_70)
 
 
 public class MainActivity2 extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+    
         this.setTitle("AlterDialog");
+        
         super.onCreate(savedInstanceState);
+        
         setContentView(R.layout.button);
+        
         Button button = (Button)findViewById(R.id.button);
+        
         button.setOnClickListener(new View.OnClickListener() {
+        
             @Override
             public void onClick(View v) {
+            
                 AlertDialog builder = new AlertDialog.Builder(MainActivity2.this)
                         .setView(R.layout.dialog_layout)
                         .setNegativeButton("Cancel",null)
