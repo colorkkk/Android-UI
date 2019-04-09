@@ -9,11 +9,11 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190409103039114.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMjQxNDEy,size_16,color_FFFFFF,t_70)
 
 public class MainActivity extends AppCompatActivity {
+
     private List<Map<String, Object>> listItems;
-    private String[] names = new String[]
-            {"Lion", "Tiger", "Monkey", "Dog", "Cat", "Elephant"};
-    private int[] imageIds = new int[]
-            {R.drawable.lion, R.drawable.tiger, R.drawable.monkey,
+    
+    private String[] names = new String[] {"Lion", "Tiger", "Monkey", "Dog", "Cat", "Elephant"};
+    private int[] imageIds = new int[] {R.drawable.lion, R.drawable.tiger, R.drawable.monkey,
                     R.drawable.dog, R.drawable.cat, R.drawable.elephant};
 
     @Override
