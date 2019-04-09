@@ -33,10 +33,11 @@ public class MainActivity extends AppCompatActivity {
                 R.layout.animals_layout,
                 new String[]{"animalName", "image"},
                 new int[]{R.id.animals_name, R.id.animals_image});
-AnimalsAdapter(AnimalsActivity.this,R.layout.animals_layout,animalsList);
-        ListView listView = (ListView) findViewById(R.id.list_view);
-        listView.setAdapter(simpleAdapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                
+                AnimalsAdapter(AnimalsActivity.this,R.layout.animals_layout,animalsList);
+                ListView listView = (ListView) findViewById(R.id.list_view);
+                listView.setAdapter(simpleAdapter);
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -72,11 +73,14 @@ public class MainActivity2 extends AppCompatActivity {
         });
     }
 }
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190409103819816.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMjQxNDEy,size_16,color_FFFFFF,t_70)
 ## 3.使用XML定义菜单
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190409103626645.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMjQxNDEy,size_16,color_FFFFFF,t_70)
 
+
 public class MainActivity3 extends AppCompatActivity {
+
     public static final String TAG = "lifecycle";
     float size[] = {40, 50, 60};
     String color[] = {"red", "black"};
@@ -126,9 +130,10 @@ public class MainActivity3 extends AppCompatActivity {
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2019040910371714.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMjQxNDEy,size_16,color_FFFFFF,t_70)
 
 public class MainActivity4 extends AppCompatActivity {
+
     private ListView list;
-    private String[] names = new String[]
-            { "One", "Two", "Three", "Four","Five"};
+    
+    private String[] names = new String[] { "One", "Two", "Three", "Four","Five"};
     private int[] images = new int[]{
             R.drawable.ic_launcher_background,
             R.drawable.ic_launcher_background,
